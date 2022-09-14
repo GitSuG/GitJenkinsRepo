@@ -11,7 +11,8 @@ public class ParallelExMethods {
 	
 	@BeforeTest
 	public void beforeTest() {
-		System.out.println("Before Test");
+		String today = new SimpleDateFormat("MM/dd/yyyy").format(new Date());
+		System.out.println("Before Test:"+today);
 	}
 	
 	@BeforeMethod
